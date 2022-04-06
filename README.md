@@ -67,7 +67,7 @@ Add dependency in your app module
 
 	dependencies {
 
-	        implementation 'com.github.lazy-pr0grammer:MotionToast:LATEST_VERSION' 
+	        implementation 'com.github.lazy-pr0grammer:MotionToast-Easiotic:1.0' 
 
 	}
 
