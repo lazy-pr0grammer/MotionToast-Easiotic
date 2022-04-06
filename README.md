@@ -14,15 +14,20 @@ https://github.com/Spikeysanju/MotionToast
 
 A beautiful Toast library in Android Java ♨️
 
-![GitHub Cards Preview](https://github.com/lazy-pr0grammer/MotionToast/blob/main/media/20220404_011956.png)
+![GitHub Cards Preview](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/banner.png)
 
 # Types of toast style 😋
 
-  Light MotionToasts: https://github.com/lazy-pr0grammer/MotionToast/blob/main/media/Light.png
+  Light MotionToasts: 
+  
+  ![alt text](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/Light.png)
 
   
 
-  Dark MotionToasts: https://github.com/lazy-pr0grammer/MotionToast/blob/main/media/Dark.png
+  Dark MotionToasts: 
+  
+  ![alt text](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/Dark.png)
+
 
 ## What's New 👻
 
@@ -32,7 +37,7 @@ A beautiful Toast library in Android Java ♨️
 
 3. Removed old fonts and added new fonts.
 
-4. Now the library more easy-to-use
+4. Now the library is more easy-to-use
 
 ## How to use? 🤔
 
