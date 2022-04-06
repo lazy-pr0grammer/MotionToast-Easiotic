@@ -10,7 +10,7 @@ Don't forget to check Spikeysanju's library also
 
 https://github.com/Spikeysanju/MotionToast
 
-[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com) [![GitHub license](https://img.shields.io/badge/License-Apache2.0-blue.svg)](LICENSE) ![GitHub stars](https://img.shields.io/github/stars/lazy-pr0grammer/MotionToast?style=social) ![GitHub forks](https://img.shields.io/github/forks/lazy-pr0grammer/MotionToast?label=Fork&style=social) ![Repo size](https://img.shields.io/github/repo-size/lazy-pr0grammer/MotionToast?style=social) ![GitHub follow](https://img.shields.io/github/followers/lazy-pr0grammer?label=Follow&style=social)
+[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com) [![GitHub license](https://img.shields.io/badge/License-Apache2.0-blue.svg)](LICENSE) ![GitHub stars](https://img.shields.io/github/stars/lazy-pr0grammer/MotionToast-Easiotic?style=social) ![GitHub forks](https://img.shields.io/github/forks/lazy-pr0grammer/MotionToast-Easiotic?label=Fork&style=social) ![Repo size](https://img.shields.io/github/repo-size/lazy-pr0grammer/MotionToast-Easiotic?style=social) ![GitHub follow](https://img.shields.io/github/followers/lazy-pr0grammer?label=Follow&style=social)
 
 A beautiful Toast library in Android Java ♨️
 
