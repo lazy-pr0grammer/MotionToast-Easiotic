@@ -121,6 +121,16 @@ Add dependency in your app module
 
 ```
 
+## Color mode 🌈
+
+```
+
+1. 0 //Zero is for full color Toast
+
+2. 1 //One is for transparent color Toast
+
+```
+
 ## Sample codes for MotionToasts ❄
 
 ### Full color Success MotionToast(Light)
