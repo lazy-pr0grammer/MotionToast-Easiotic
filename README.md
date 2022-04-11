@@ -53,7 +53,9 @@ Add it in your root build.gradle at the end of repositories:
 
 			...
 
-			maven { url 'https://jitpack.io' }
+			maven { 
+                           url 'https://jitpack.io' 
+                     }
 
 		}
 
@@ -147,6 +149,8 @@ MotionStyle.LIGHT,
 
 MotionStyle.SUCCESS,
 
+MotionStyle.BOTTOM,
+
 "SUCCESS",
 
 "You got a reward :)",
@@ -170,6 +174,8 @@ new MotionToast(MainActivity.this,
 MotionStyle.LIGHT,
 
 MotionStyle.SUCCESS,
+
+MotionStyle.BOTTOM,
 
 "SUCCESS",
 
@@ -195,6 +201,8 @@ MotionStyle.DARK,
 
 MotionStyle.SUCCESS,
 
+MotionStyle.BOTTOM,
+
 "SUCCESS",
 
 "You got a reward :)",
@@ -218,6 +226,8 @@ new MotionToast(MainActivity.this,
 MotionStyle.DARK,
 
 MotionStyle.SUCCESS,
+
+MotionStyle.BOTTOM,
 
 "SUCCESS",
 
