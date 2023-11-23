@@ -117,12 +117,17 @@ dependencies {
 
 ```java
 
-MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
-        .setText("You got a reward :)")
-        .setStyle(MotionToast.Style.SUCCESS)
-        .setGravity(MotionToast.Gravity.BOTTOM)
-        .setDuration(MotionToast.Duration.LENGTH_SHORT)
-        .build();
+MotionToast motionToast = new MotionToast(
+        MainActivity.this,
+        0,
+        MotionStyle.LIGHT,
+        MotionStyle.SUCCESS,
+        MotionStyle.BOTTOM,
+        "SUCCESS",
+        "You got succeed :)",
+        MotionStyle.LENGTH_SHORT
+);
+
 motionToast.show();
 
 
@@ -131,12 +136,17 @@ motionToast.show();
 ### Transparent color Success MotionToast(Dark)
 
 ```java
-MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
-        .setText("You got a reward :)")
-        .setStyle(MotionToast.Style.SUCCESS)
-        .setGravity(MotionToast.Gravity.BOTTOM)
-        .setDuration(MotionToast.Duration.LENGTH_SHORT)
-        .build();
+MotionToast motionToast = new MotionToast(
+        MainActivity.this,
+        1,
+        MotionStyle.LIGHT,
+        MotionStyle.SUCCESS,
+        MotionStyle.BOTTOM,
+        "SUCCESS",
+        "You got succeed :)",
+        MotionStyle.LENGTH_SHORT
+);
+
 motionToast.show();
 
 ```
@@ -144,12 +154,17 @@ motionToast.show();
 ### Full color Success MotionToast(Dark)
 
 ```java
-MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
-        .setText("You got a reward :)")
-        .setStyle(MotionToast.Style.SUCCESS)
-        .setGravity(MotionToast.Gravity.BOTTOM)
-        .setDuration(MotionToast.Duration.LENGTH_SHORT)
-        .build();
+MotionToast motionToast = new MotionToast(
+        MainActivity.this,
+        0,
+        MotionStyle.DARK,
+        MotionStyle.SUCCESS,
+        MotionStyle.BOTTOM,
+        "SUCCESS",
+        "You got succeed :)",
+        MotionStyle.LENGTH_SHORT
+);
+
 motionToast.show();
 
 ```
@@ -158,12 +173,17 @@ motionToast.show();
 
 ```java
 
-MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
-        .setText("You got a reward :)")
-        .setStyle(MotionToast.Style.SUCCESS)
-        .setGravity(MotionToast.Gravity.BOTTOM)
-        .setDuration(MotionToast.Duration.LENGTH_SHORT)
-        .build();
+MotionToast motionToast = new MotionToast(
+        MainActivity.this,
+        1,
+        MotionStyle.DARK,
+        MotionStyle.SUCCESS,
+        MotionStyle.BOTTOM,
+        "SUCCESS",
+        "You got succeed :)",
+        MotionStyle.LENGTH_SHORT
+);
+
 motionToast.show();
 
 
