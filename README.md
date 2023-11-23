@@ -2,13 +2,9 @@
 
 Java version of MotionToast 🔥
 
-This is the first java version of MotionToast by Lazy-pr0grammer 
+This is the first Java version of MotionToast by Lazy-pr0grammer.
 
-Don't forget to check Spikeysanju's library also 
-
-@Spikeysanju
-
-https://github.com/Spikeysanju/MotionToast
+Don't forget to check Spikeysanju's library also: [Spikeysanju's MotionToast](https://github.com/Spikeysanju/MotionToast)
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com) [![GitHub license](https://img.shields.io/badge/License-Apache2.0-blue.svg)](LICENSE) ![GitHub stars](https://img.shields.io/github/stars/lazy-pr0grammer/MotionToast-Easiotic?style=social) ![GitHub forks](https://img.shields.io/github/forks/lazy-pr0grammer/MotionToast-Easiotic?label=Fork&style=social) ![Repo size](https://img.shields.io/github/repo-size/lazy-pr0grammer/MotionToast-Easiotic?style=social) ![GitHub follow](https://img.shields.io/github/followers/lazy-pr0grammer?label=Follow&style=social)
 
@@ -16,68 +12,50 @@ A beautiful Toast library in Android Java ♨️
 
 ![GitHub Cards Preview](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/banner.png)
 
-# Types of toast style 😋
+## Types of toast style 😋
 
-  Light MotionToasts: 
-  
-  ![alt text](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/Light.png)
+- **Light MotionToasts:**
+  ![Light MotionToasts](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/Light.png)
 
-  
-
-  Dark MotionToasts: 
-  
-  ![alt text](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/Dark.png)
-
+- **Dark MotionToasts:**
+  ![Dark MotionToasts](https://github.com/lazy-pr0grammer/MotionToast-Easiotic/blob/master/screenshots/Dark.png)
 
 ## What's New 👻
 
 1. Added round corner support for Light full color toasts.
-
-2. Made it more easy for everyone. 
-
+2. Made it more easy for everyone.
 3. Removed old fonts and added new fonts.
-
-4. Now the library is more easy-to-use
+4. Now the library is more easy-to-use.
 
 ## How to use? 🤔
 
-Step 1. Add the JitPack repository to your build file
+**Step 1:** Add the JitPack repository to your build file
 
-Add it in your root build.gradle at the end of repositories:
+Add it in your root `build.gradle` at the end of repositories:
 
-```
-
-	allprojects {
-
-		repositories {
-
-			...
-
-			maven { 
-                           url 'https://jitpack.io' 
-                     }
-
-		}
-
-	}
-
+```groovy
+allprojects {
+    repositories {
+        ...
+        maven { 
+            url 'https://jitpack.io' 
+        }
+    }
+}
 ```
 
 Add dependency in your app module
 
-```
-
-	dependencies {
-
-	        implementation 'com.github.lazy-pr0grammer:MotionToast-Easiotic:1.0' 
-
-	}
-
+  ```gradle
+dependencies {
+    implementation 'com.github.lazy-pr0grammer:MotionToast-Easiotic:1.0' 
+}
 ```
 
 ## Five types of Toast 🖐🏻
 
-```
+```kt
+
 
 1. MotionStyle.SUCCESS
 
@@ -93,7 +71,7 @@ Add dependency in your app module
 
 ## Toast duration ⏳
 
-```
+```kt
 
 1. MotionStyle.LENGTH_SHORT //3 seconds
 
@@ -103,7 +81,7 @@ Add dependency in your app module
 
 ## Toast modes 🐸
 
-```
+```kt
 
 1. MotionStyle.LIGHT
 
@@ -113,7 +91,7 @@ Add dependency in your app module
 
 ## Toast gravity 🚀
 
-```
+```kt
 
 1. MotionStyle.TOP
 
@@ -125,7 +103,7 @@ Add dependency in your app module
 
 ## Color mode 🌈
 
-```
+```kt
 
 1. 0 //Zero is for full color Toast
 
@@ -137,106 +115,63 @@ Add dependency in your app module
 
 ### Full color Success MotionToast(Light)
 
-```
+```java
 
-MotionToast motionToast = 
+MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
+        .setText("You got a reward :)")
+        .setStyle(MotionToast.Style.SUCCESS)
+        .setGravity(MotionToast.Gravity.BOTTOM)
+        .setDuration(MotionToast.Duration.LENGTH_SHORT)
+        .build();
+motionToast.show();
 
-new MotionToast(MainActivity.this,
-
-0,
-
-MotionStyle.LIGHT,
-
-MotionStyle.SUCCESS,
-
-MotionStyle.BOTTOM,
-
-"SUCCESS",
-
-"You got a reward :)",
-
-MotionStyle.LENGTH_SHORT)
-
-.show();
 
 ```
 
 ### Transparent color Success MotionToast(Dark)
 
-```
-
-MotionToast motionToast = 
-
-new MotionToast(MainActivity.this,
-
-1,
-
-MotionStyle.LIGHT,
-
-MotionStyle.SUCCESS,
-
-MotionStyle.BOTTOM,
-
-"SUCCESS",
-
-"You got a reward :)",
-
-MotionStyle.LENGTH_SHORT)
-
-.show();
+```java
+MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
+        .setText("You got a reward :)")
+        .setStyle(MotionToast.Style.SUCCESS)
+        .setGravity(MotionToast.Gravity.BOTTOM)
+        .setDuration(MotionToast.Duration.LENGTH_SHORT)
+        .build();
+motionToast.show();
 
 ```
 
 ### Full color Success MotionToast(Dark)
 
-```
-
-MotionToast motionToast = 
-
-new MotionToast(MainActivity.this,
-
-0,
-
-MotionStyle.DARK,
-
-MotionStyle.SUCCESS,
-
-MotionStyle.BOTTOM,
-
-"SUCCESS",
-
-"You got a reward :)",
-
-MotionStyle.LENGTH_SHORT)
-
-.show();
+```java
+MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
+        .setText("You got a reward :)")
+        .setStyle(MotionToast.Style.SUCCESS)
+        .setGravity(MotionToast.Gravity.BOTTOM)
+        .setDuration(MotionToast.Duration.LENGTH_SHORT)
+        .build();
+motionToast.show();
 
 ```
 
 ### Transparent color Success MotionToast(Dark)
 
-```
+```java
 
-MotionToast motionToast = 
+MotionToast motionToast = new MotionToast.Builder(MainActivity.this)
+        .setText("You got a reward :)")
+        .setStyle(MotionToast.Style.SUCCESS)
+        .setGravity(MotionToast.Gravity.BOTTOM)
+        .setDuration(MotionToast.Duration.LENGTH_SHORT)
+        .build();
+motionToast.show();
 
-new MotionToast(MainActivity.this,
-
-1,
-
-MotionStyle.DARK,
-
-MotionStyle.SUCCESS,
-
-MotionStyle.BOTTOM,
-
-"SUCCESS",
-
-"You got a reward :)",
-
-MotionStyle.LENGTH_SHORT)
-
-.show();
 
 ```
+<br><br>
 
-Thank you :)
+
+**Thank you for exploring MotionToast-Easiotic!**
+<br>
+Happy coding! 🚀
+
