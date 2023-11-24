@@ -48,7 +48,7 @@ Add dependency in your app module
 
   ```gradle
 dependencies {
-    implementation 'com.github.lazy-pr0grammer:MotionToast-Easiotic:1.0' 
+    implementation 'com.github.lazy-pr0grammer:MotionToast-Easiotic:1.2' 
 }
 ```
 
