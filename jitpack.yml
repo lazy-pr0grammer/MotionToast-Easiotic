@@ -1,0 +1,8 @@
+# configuration file for building snapshots and releases with jitpack.io
+jdk:
+  - openjdk21
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - FILE="-Dfile=motiontoast-easiotic-release.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.lazy-pr0grammer -DartifactId=MotionToast-Easiotic -Dversion=1.2 -Dpackaging=aar -DgeneratePom=true

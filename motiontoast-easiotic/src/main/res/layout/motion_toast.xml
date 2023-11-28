@@ -1,147 +1,79 @@
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motion_toast_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/dimen_24"
+    android:background="@android:color/white">
 
-        xmlns:android="http://schemas.android.com/apk/res/android"
-
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-
-        android:id="@+id/motion_toast_view"
-
-        android:layout_width="match_parent"
-
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="@dimen/dimen_12"
         android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/color_view_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        android:layout_margin="@dimen/dimen_24"
+    <ImageView
+        android:id="@+id/custom_toast_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_toEndOf="@id/colorView"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_info_yellow" />
 
-        android:background="@android:color/white" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_toEndOf="@id/custom_toast_image"
+        android:gravity="center_horizontal|end|start"
+        android:orientation="vertical">
 
-        <View
-
-            android:id="@+id/colorView"
-
-            android:layout_width="@dimen/dimen_12"
-
-            android:layout_height="100dp"
-
-            android:layout_alignParentStart="true"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-
-            app:layout_constraintStart_toStartOf="parent"
-
-            app:layout_constraintTop_toTopOf="parent"
-
-            android:background="@drawable/color_view_background" />
-
-        <ImageView
-
-            android:id="@+id/custom_toast_image"
-
-            android:layout_width="40dp"
-
-            android:layout_height="40dp"
-
-            android:layout_centerVertical="true"
-
-            android:layout_marginStart="@dimen/dimen_8"
-
-            android:layout_toEndOf="@id/colorView"
-
-            android:contentDescription="@string/app_name"
-
-            android:src="@drawable/ic_info_yellow" />
-
-        <LinearLayout
-
-            android:id="@+id/custom_text_view"
-
-            android:layout_width="match_parent"
-
+        <TextView
+            android:id="@+id/custom_toast_text"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginEnd="@dimen/dimen_12"
+            android:fontFamily="@font/manrope_bold"
+            android:letterSpacing="0.10"
+            android:text="@string/text_warning"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/custom_toast_image"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            android:layout_centerVertical="true"
+        <TextView
+            android:id="@+id/custom_toast_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_12"
+            android:layout_marginBottom="@dimen/dimen_12"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/manrope_regular"
+            android:maxLines="2"
+            android:text="@string/text_mock_description"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/custom_toast_image"
+            app:layout_constraintTop_toBottomOf="@id/custom_toast_text" />
 
-            android:layout_marginEnd="@dimen/dimen_8"
+    </LinearLayout>
 
-            android:layout_marginStart="@dimen/dimen_8"
-
-            android:layout_toEndOf="@id/custom_toast_image"
-
-            android:gravity="center_horizontal|left|start"
-
-            android:orientation="vertical" >
-
-            <TextView
-
-                android:id="@+id/custom_toast_text"
-
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content"
-
-                android:layout_marginEnd="@dimen/dimen_12"
-
-                android:layout_marginStart="@dimen/dimen_12"
-
-                android:layout_marginTop="@dimen/dimen_12"
-
-                app:layout_constraintEnd_toEndOf="parent"
-
-                app:layout_constraintStart_toEndOf="@id/custom_toast_image"
-
-                app:layout_constraintTop_toTopOf="parent"
-
-                android:fontFamily="@font/manrope_bold"
-
-                android:letterSpacing="0.10"
-
-                android:text="@string/text_warning"
-
-                android:textAlignment="textStart"
-
-                android:textAllCaps="true"
-
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-
-                android:textColor="@android:color/black" />
-
-            <TextView
-
-                android:id="@+id/custom_toast_description"
-
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content"
-
-                android:layout_marginBottom="@dimen/dimen_12"
-
-                android:layout_marginEnd="@dimen/dimen_12"
-
-                android:layout_marginStart="@dimen/dimen_12"
-
-                android:layout_marginTop="@dimen/dimen_4"
-
-                app:layout_constraintBottom_toBottomOf="parent"
-
-                app:layout_constraintEnd_toEndOf="parent"
-
-                app:layout_constraintStart_toEndOf="@id/custom_toast_image"
-
-                app:layout_constraintTop_toBottomOf="@id/custom_toast_text"
-
-                android:ellipsize="marquee"
-
-                android:fontFamily="@font/manrope_regular"
-
-                android:maxLines="2"
-
-                android:text="@string/text_mock_description"
-
-                android:textAlignment="textStart"
-
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-
-                android:textColor="@android:color/black" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
+</RelativeLayout>
